@@ -1,11 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fetch Jikan API Example</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
 
-</body>
+    <style>
+      *{
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+          font-family: "Poppins",sans-serif;
+      }
+      nav{
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          padding: 15px 0;
+          background: rgb(168, 167, 167);
+      }
+      nav img{
+          width: 60px;
+      }
+      nav h1{
+          font-size: 32px;
+          font-weight: 700;
+      }
+      .main{
+            border: 1px black solid;
+            width: 20%;
+            border-radius: 10px;
+            display: flex;
+            justify-content: space-around;
+            margin: 20px auto
+      }
+      .main button{
+          background: gray;
+          padding: 2px 14px;
+          border: none;
+          cursor: pointer;
+          border-top-right-radius: 10px;
+          border-bottom-right-radius: 10px;
+      }
+      .main input{
+          border: none;
+          font-size: 25px
+      }
+      .main input:focus{
+          border: none; 
+      }
+      .main img{
+          width: 38px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <h1>AnimeAPI</h1>
+      <a href="https://github.com/ArifRTzy">    
+        <img src="github.png" alt="" />
+    </a>
+    </nav>
+
+    <div class="main">
+        <input id="input" type="text" placeholder="Search anime here...">
+        <button id="btn"><img src="search.png" alt=""></button>
+    </div>
+
+    <div class="displays">
+        <img src="" alt="">
+    </div>
+  </body>
 </html>
