@@ -7,69 +7,73 @@
     <title>Document</title>
 
     <style>
-      *{
-          margin: 0;
-          padding: 0;
-          box-sizing: border-box;
-          font-family: "Poppins",sans-serif;
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
       }
-      nav{
-          display: flex;
-          justify-content: space-around;
-          align-items: center;
-          padding: 15px 0;
-          background: rgb(168, 167, 167);
+      nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 15px 0;
+        background: rgb(168, 167, 167);
       }
-      nav img{
-          width: 60px;
+      nav img {
+        width: 60px;
       }
-      nav h1{
-          font-size: 32px;
-          font-weight: 700;
+      nav h1 {
+        font-size: 32px;
+        font-weight: 700;
       }
-      .main{
-            border: 1px black solid;
-            width: 20%;
-            border-radius: 10px;
-            display: flex;
-            justify-content: space-around;
-            margin: 20px auto
+      .main {
+        border: 1px rgb(168, 167, 167) solid;
+        width: 20%;
+        border-radius: 10px;
+        display: flex;
+        justify-content: space-around;
+        margin: 20px auto;
       }
-      .main button{
-          background: gray;
-          padding: 2px 14px;
-          border: none;
-          cursor: pointer;
-          border-top-right-radius: 10px;
-          border-bottom-right-radius: 10px;
+      .main button {
+        background: rgb(168, 167, 167);
+        padding: 2px 14px;
+        border: none;
+        cursor: pointer;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        outline: 1px rgb(168, 167, 167) solid;
       }
-      .main input{
-          border: none;
-          font-size: 25px
+      .main button:hover {
+    background: gray;
       }
-      .main input:focus{
-          border: none; 
+      .main input {
+        border: none;
+        outline: 1px rgb(168, 167, 167) solid;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        font-size: 25px;
       }
-      .main img{
-          width: 38px;
+      .main img {
+        width: 38px;
       }
     </style>
   </head>
   <body>
     <nav>
       <h1>AnimeAPI</h1>
-      <a href="https://github.com/ArifRTzy">    
+      <a href="https://github.com/ArifRTzy">
         <img src="github.png" alt="" />
-    </a>
+      </a>
     </nav>
 
     <div class="main">
-        <input id="input" type="text" placeholder="Search anime here...">
-        <button id="btn"><img src="search.png" alt=""></button>
+      <input id="input" type="text" placeholder="Search anime here..." />
+      <button id="btn"><img src="search.png" alt="" /></button>
     </div>
 
-    <div class="displays">
-        <img src="" alt="">
-    </div>
+    <div id="display"></div>
+
+    <script src="index.js"></script>
   </body>
 </html>
