@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Document</title>
+    <title>Anime</title>
+    <link rel="shortcut icon" href="github.png" type="image/x-icon" />
 
     <style>
       * {
@@ -45,7 +46,7 @@
         outline: 1px rgb(168, 167, 167) solid;
       }
       .main button:hover {
-    background: gray;
+        background: gray;
       }
       .main input {
         border: none;
@@ -53,9 +54,49 @@
         border-top-left-radius: 10px;
         border-bottom-left-radius: 10px;
         font-size: 25px;
+        padding-left: 8px;
+        font-weight: 50;
+        color: rgb(17, 17, 17);
+      }
+      .main input::placeholder{
+        font-size: 24px;
       }
       .main img {
         width: 38px;
+      }
+      .display {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        width: 60%;
+        margin: 40px auto;
+        gap: 30px;
+      }
+      .display a{
+        text-decoration: none;
+        color: rgb(17, 17, 17);
+      }
+      .display a div{
+        line-height: 0;
+        cursor: pointer;
+      }
+      .display a div img{
+        width: 200px;
+        height: 300px;
+        object-fit: cover;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+      }
+      .display a div p{
+        background: rgb(168, 167, 167);
+        font-weight: 700;
+        padding: 25px 20px;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: 200px;
+        text-align: center;
       }
     </style>
   </head>
@@ -72,7 +113,8 @@
       <button id="btn"><img src="search.png" alt="" /></button>
     </div>
 
-    <div id="display"></div>
+    <div id="display" class="display">
+    </div>
 
     <script src="index.js"></script>
   </body>
