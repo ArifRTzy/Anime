@@ -38,12 +38,14 @@
       }
       .main button {
         background: rgb(168, 167, 167);
-        padding: 2px 14px;
+        padding: 6px 14px;
         border: none;
         cursor: pointer;
         border-top-right-radius: 10px;
         border-bottom-right-radius: 10px;
         outline: 1px rgb(168, 167, 167) solid;
+        display: flex;
+        align-items: center;
       }
       .main button:hover {
         background: gray;
@@ -55,10 +57,10 @@
         border-bottom-left-radius: 10px;
         font-size: 25px;
         padding-left: 8px;
-        font-weight: 50;
+        font-weight: 400;
         color: rgb(17, 17, 17);
       }
-      .main input::placeholder{
+      .main input::placeholder {
         font-size: 24px;
       }
       .main img {
@@ -71,22 +73,22 @@
         margin: 40px auto;
         gap: 30px;
       }
-      .display a{
+      .display a {
         text-decoration: none;
         color: rgb(17, 17, 17);
       }
-      .display a div{
+      .display a div {
         line-height: 0;
         cursor: pointer;
       }
-      .display a div img{
+      .display a div img {
         width: 200px;
         height: 300px;
         object-fit: cover;
         border-top-left-radius: 8px;
         border-top-right-radius: 8px;
       }
-      .display a div p{
+      .display a div p {
         background: rgb(168, 167, 167);
         font-weight: 700;
         padding: 25px 20px;
@@ -113,8 +115,7 @@
       <button id="btn"><img src="search.png" alt="" /></button>
     </div>
 
-    <div id="display" class="display">
-    </div>
+    <div id="display" class="display"></div>
 
     <script src="index.js"></script>
   </body>
